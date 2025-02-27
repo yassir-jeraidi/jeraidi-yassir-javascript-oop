@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        .form-group {
+            margin-left: 80px;
+            margin-top: 2px;
+        }
+
+        button {
+            all: unset;
+            background-color: dodgerblue;
+            color: white;
+            padding: 5px 15px;
+            border-radius: 10px;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+<div class="hero">
+    <h1>Calculateur d'IMC</h1>
+    <div class="form-group">
+        <label for="poids">Poids (kg) : </label>
+        <input type="text" id="poids">
+    </div>
+    <div class="form-group">
+        <label for="taille">Taille (m) : </label>
+        <input type="text" id="taille">
+    </div>
+    <button onclick="calc()">Calculer</button>
+    <p id="output"></p>
+</div>
+
+<script>
+    function calc() {
+
+        let res = +poids.value / ((+taille.value) ** 2)
+        let interpretation = ''
+        if (res < 18.5) {
+            interpretation = 'Insiffisance pondérale (mairgeur)'
+        } else if (res > 18.5 && res < 25) {
+            interpretation = 'Corpulence normale'
+        } else if (res > 25 && res < 30) {
+            interpretation = 'Surpoids'
+        } else if (res > 30 && res < 35) {
+            interpretation = 'Obesite moderee'
+        } else if (res > 35 && res < 40) {
+            interpretation = 'Obesite severe'
+        } else if (res > 40) {
+            interpretation = 'Obesite morbide ou massive'
+        }
+        console.log(res, interpretation)
+        output.innerText = `Votre IMC est de ${res.toFixed(2)}. Vous êtes en etat ${interpretation}`
+    }
+</script>
+
+</body>
+</html>
