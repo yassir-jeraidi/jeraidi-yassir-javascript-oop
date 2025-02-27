@@ -5,7 +5,6 @@ This repository contains a collection of JavaScript practical works (TPs) demons
 ## Table of Contents
 
 ### [TP1 - Basic JavaScript Algorithms](tp1/README.md)
-
 - Temperature conversion
 - Time duration conversion
 - Number sorting
@@ -15,14 +14,12 @@ This repository contains a collection of JavaScript practical works (TPs) demons
 - Square root approximation
 
 ### [TP4 - DOM Manipulation & Calculator](tp4/README.md)
-
 - Value swapping implementation
 - Basic arithmetic calculator
 - BMI calculator with interpretation
 - Scientific calculator with advanced features
 
 ## Technologies Used
-
 - HTML5
 - CSS3
 - JavaScript (ES6+)
@@ -31,7 +28,6 @@ This repository contains a collection of JavaScript practical works (TPs) demons
 ## Key Concepts Covered
 
 ### JavaScript Fundamentals
-
 - Functions and arrow functions
 - Arrays and array methods
 - Control structures
@@ -39,18 +35,22 @@ This repository contains a collection of JavaScript practical works (TPs) demons
 - String manipulation
 
 ### DOM Manipulation
-
 - Event handling
 - Element selection
 - Dynamic content updates
 - Form handling
 
 ### Advanced Concepts
-
 - Destructuring assignment
 - Regular expressions
 - Error handling
 - State management
 - Event delegation
 
+## Getting Started
+
+1. Clone the repository
+2. Navigate to specific TP directory
+3. Open the `index.html` file in your browser
+4. For code explanations, refer to the README.md in each TP directory
 
